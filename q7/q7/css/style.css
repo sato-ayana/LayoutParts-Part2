@@ -1,1 +1,38 @@
 @charset "UTF-8";
+
+.speech {
+  position: relative;
+  display: inline-block;
+  width: 500px;
+  background: #fad296;
+  border: solid 5px #815a0a;
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.speech p {
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.speech::before {
+  content: "";
+  position: absolute;
+  bottom: -24px;
+  left: 10%;
+  transform: translateX(-50%);
+  border: 15px solid transparent;
+  border-top: 15px solid #fad296;
+  z-index: 2;
+}
+
+.speech::after {
+  content: "";
+  position: absolute;
+  bottom: -34px;
+  left: 10%;
+  transform: translateX(-50%);
+  border: 17px solid transparent;
+  border-top: 17px solid #815a0a;
+  z-index: 1;
+}

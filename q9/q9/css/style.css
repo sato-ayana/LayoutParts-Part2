@@ -2,3 +2,207 @@
 
 /* カード内の画像は以下のURLを使用して下さい */
 /* https://picsum.photos/id/1005/200/300 */
+
+.q9-1 {
+  width: 200px;
+  height: 200px;
+  background: #76ff82;
+  animation-name: fadeIn;
+  animation-duration: 4s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-direction: normal;
+  animation-fill-mode: backwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.q9-2 {
+  width: 200px;
+  height: 200px;
+  background: #76ff82;
+  animation-name: fadeOut;
+  animation-duration: 4s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-direction: normal;
+  animation-fill-mode: backwards;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.q9-3 {
+  width: 200px;
+  height: 200px;
+  background: #76ff826b;
+  animation-name: rotation;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: backwards;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.q9-4 {
+  width: 200px;
+  height: 200px;
+  background: #331aefd0;
+  transition: 0.5s;
+}
+
+.q9-4:hover {
+  background: #ff27e2c9;
+}
+
+.q9-5 {
+  width: 200px;
+  height: 200px;
+  background: #331aefd0;
+  transition: 0.5s;
+  transform: rotateZ(0deg);
+}
+
+.q9-5:hover {
+  transform: rotateZ(360deg);
+}
+
+.q9-6 {
+  width: 200px;
+  height: 200px;
+  background: #331aefd0;
+  transition: 0.5s;
+}
+
+.q9-6:hover {
+  transform: translateY(-20%);
+}
+
+.q9-7 {
+  width: 200px;
+  height: 200px;
+  background: #331aefd0;
+  transition: 0.5s;
+}
+
+.q9-7:hover {
+  transform: translate(20%,0%);
+}
+
+.q9-8 {
+  width: 200px;
+  height: 200px;
+  background: #331aefd0;
+  transition: 0.5s;
+}
+
+.q9-8:hover {
+  height: 300px;
+}
+
+.q9-9 {
+  width: 200px;
+  height: 200px;
+  background: #331aefd0;
+  transition: 0.5s;
+}
+
+.q9-9:hover {
+  width: 500px;
+}
+
+.q9-10 {
+  width: 200px;
+  height: 200px;
+  background: #331aefd0;
+  transition: 0.5s;
+  box-sizing: border-box;
+}
+
+.q9-10:hover {
+  border: 10px #00ffe5 solid;
+}
+
+.q9-11 {
+  width: 200px;
+  height: 200px;
+  background: #331aefd0;
+  transition: 0.5s;
+}
+
+.q9-11:hover {
+  box-shadow: 8px 11px 10px 3px #06031ed0;
+}
+
+.q9-12 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 10px solid #ecf1f2;
+  border-color: #14ff4bcd #ecf1f2 #ecf1f2 #ecf1f2;
+  animation-name: spin;
+  animation-duration: 1.1s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+.q9-13 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 300px;
+  list-style: none;
+  background: #ffffff;
+  outline: 1px solid #000000;
+  padding: 20px;
+  transition: 0.5s;
+}
+
+.q9-13-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  background-image: url(https://picsum.photos/id/1005/200/300);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 10px 3px #424242d0;
+  z-index: 1;
+}
