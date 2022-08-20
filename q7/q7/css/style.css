@@ -2,12 +2,12 @@
 
 .speech {
   position: relative;
-  display: inline-block;
   width: 500px;
   background: #fad296;
   border: solid 5px #815a0a;
   border-radius: 16px;
   padding: 20px;
+  margin: 0 auto;
 }
 
 .speech p {
@@ -21,6 +21,7 @@
   transform: translateX(-50%);
   left: 10%;
   border: 15px solid transparent;
+  border-top: 15px solid #fad296;
 }
 
 

@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+.content {
+  text-align: center;
+}
+
 .q10-1-red {
   display: inline-block;
   line-height: 50px;
